@@ -6,4 +6,7 @@ ser.port = "/dev/ttyUSB3"       #serial port
 ser.timeout = 3         #sekundi koliko će program čekati odgovor
 ser.open()              #otvori serial port
 
-ser.write("\n  hello vidi-x!".encode())
+while True:
+  poruka = ser.readline()
+  poruka = poruka.decode("utf-8")
+  print(poruka, end = "")
