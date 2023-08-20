@@ -16,7 +16,7 @@ void setup() {
   // setup se ponovi jedanput
 
   // svaki od gumba definirati pin mode kao INPUT_PULLUP
-  pinMode(B                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ,uttonA, INPUT_PULLUP);
+  pinMode(ButtonA, INPUT_PULLUP);
 
   Serial.begin(9600); // pokreni serijsku komunikaciju s računalom
   // otvori serial monitor da pregledaš poruke sa ctrl+shift+m
